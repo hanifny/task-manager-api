@@ -95,7 +95,6 @@ router.patch('/tasks/:id', auth, async (req, res) => {
 
         res.send(task)
     } catch (e) {
-        console.log(e);
         res.status(400).send()
     }
 })
